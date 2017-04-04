@@ -1,0 +1,11 @@
+applications:
+- path: target/JavaCloudantApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: test-java-app-ar
+  host: test-java-app-ar
+  disk_quota: 1024M
+  services:
+  - test-java-app-ar-cloudantNoSQLDB
+  - Auto-Scaling-iq
